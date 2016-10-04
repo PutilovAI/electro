@@ -2,7 +2,26 @@ extend ../layouts/main
 
 block content
 	.page
-		section.section Привет
+		section.section.section_intro
+			header.header
+				.container
+					.header__container
+						.header__item
+							.logo
+						.header__item.h-align_right
+							.button Получить консультацию
+							.phone.h-display_inline-block.h-ml_30
+								.phone__icon
+								.phone__number
+									.phone__number-prefix +7(343)
+									.phone__number-main 202-04-90
+
+			.intro
+				.intro__title Электрощиты
+				.intro__line
+				.intro__desc
+					|С гарантией
+					span.h-color_yellow 5 лет
 
 
 block popup

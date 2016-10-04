@@ -15,6 +15,7 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.2",
+    "gulp-flatten": "^0.3.1",
     "gulp-html-prettify": "0.0.1",
     "gulp-imagemin": "^3.0.3",
     "gulp-jade": "^1.1.0",
@@ -22,6 +23,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-stylus": "^2.5.0",
     "gulp-uglifyjs": "^0.6.2",
+    "jeet": "^6.1.5",
     "pug": "^2.0.0-beta6"
   }
 }
