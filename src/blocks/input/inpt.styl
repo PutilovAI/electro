@@ -1,0 +1,33 @@
+.input
+    position: relative
+    &__text
+        font-size: 16px
+        padding 0.6em 1em
+        background-color $input-bg
+        border 2px solid $input-border
+        outline none
+        border-radius 3px
+        color $input-color
+        opacity: 0.6
+        transition all 0.2s linear
+        width: 100%
+        min-width: 240px
+
+        &:hover
+            opacity: 0.8
+
+        &:focus
+            outline none
+            opacity: 1
+
+        &_full
+            max-width: 100%
+
+    &__label
+        font-size: 16px
+        margin-bottom 8px
+
+    &__error
+        position: absolute
+        bottom -30px
+        color: $input-error

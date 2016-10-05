@@ -1,5 +1,7 @@
+$bg-action = #f3b114
+
 .button
-	border-radius 0.1em
+	border-radius 0.3em
 	padding 1em 1.3em 1.1em
 	background-color $color-blue
 	cursor pointer
@@ -8,8 +10,18 @@
 	text-decoration none
 	color #fff
 	text-align center
-	transition background 0.2s linear
+	transition all 0.2s linear
 
 	&:hover
 		color #fff
 		background-color lighten($color-blue, 5%)
+
+	&_action
+		background-color $bg-action
+		font-size 12px
+		text-transform uppercase
+		padding 1.1em 3em 1.15em
+
+		&:hover
+			color $base-fc
+			background-color #f3cc14

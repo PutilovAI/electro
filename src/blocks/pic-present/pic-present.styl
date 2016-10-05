@@ -2,6 +2,16 @@ $color-flag = #f3b114
 .pic-present
     position: relative
 
+    &:before
+        content ''
+        position: absolute
+        height 100%
+        width: 54%
+        left: -42%
+        top: -6%
+        z-index: 0
+        background: url(../images/icon-bg-voltage.png) no-repeat right center
+        background-size: 100%
     &__flag
         width 30%
         height 5%
@@ -29,3 +39,5 @@ $color-flag = #f3b114
         width 100%
         border-radius: 20% 0 20% 0
         display: block
+        position: relative
+        z-index: 1

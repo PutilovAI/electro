@@ -1,4 +1,4 @@
-stitches-($x: 0, $y: 0, $width: 0, $height: 0)
+stitches-($x = 0, $y = 0, $width = 0, $height = 0)
     &:before
         background-position $x $y
         width $width
@@ -6,6 +6,8 @@ stitches-($x: 0, $y: 0, $width: 0, $height: 0)
 
 
 .icon
+    display inline-block
+    vertical-align: middle
     &:before
         content ''
         background-image: url(../images/sprite-icon.png)

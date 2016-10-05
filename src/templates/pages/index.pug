@@ -20,7 +20,7 @@ block content
 				h1.intro__title Электрощиты
 				.intro__line
 				.intro__desc
-					|С гарантией
+					|С гарантией&nbsp;
 					span.h-color_yellow 5 лет
 
 			.intro-tile
@@ -41,7 +41,7 @@ block content
 
 		section.section.section_icon-title.section_icon-title-ground-1
 			.container
-				h2.section__title
+				h2.section__title.h-mb_60
 					|Выбирая нас,&nbsp;
 					span.h-color_blue.h-text_bold-mag  вы получаете:
 
@@ -52,30 +52,12 @@ block content
 							.pic-present__flag.pic-present__flag_bot
 							img.pic-present__img(src='./assets/images/pic-present-1.jpg')
 					.col_6
-						ul.list-icon
-							li.list-icon__item
-								.list-icon__item-text Гарантию на оборудование
-								.list-icon__item-icon
-									.icon.icon_sheld
-							li.list-icon__item
-								.list-icon__item-text Доступные и честные цены
-								.list-icon__item-icon
-									.icon.icon_price
-							li.list-icon__item
-								.list-icon__item-text Только качественные комплектующие
-								.list-icon__item-icon
-									.icon.icon_check
-							li.list-icon__item
-								.list-icon__item-text Квалифицированный и опытный персонал
-								.list-icon__item-icon
-									.icon.icon_user
-							li.list-icon__item
-								.list-icon__item-text Защиту оборудования от пыли и влаги
-								.list-icon__item-icon
-									.icon.icon_wet
-							li.list-icon__item
-								.list-icon__item-text Безопасность обслуживания
-								.list-icon__item-icon
-									.icon.icon_lock
+						include ../partials/list-icon.pug
 
+		section.section.section_bg-order.h-color_white
+			.section__scroll-bot
+				.icon.icon_mouse
+			.container
+				include ../partials/form-order
+				h4.h-align_center Только при заказе с сайта: демонтаж старого щита в подарок!
 block popup
