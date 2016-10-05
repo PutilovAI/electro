@@ -2,7 +2,35 @@
     width 100%
     background-size cover
     background-position center
-    position: relative
+    position relative
+    padding 50px 0
+    
     &_intro
         background-image url(../images/banner-main.png)
         min-height 700px
+
+    &_icon-title
+        padding-top 85px
+        &:before
+            content ""
+            position absolute
+            height 72px
+            width 40px
+            pos-center-w()
+            top 0
+            background-position: center top
+            background-repeat: no-repeat
+            z-index: -1
+
+        &-ground-1
+            &:before
+                background-image url(../images/section-icon-ground-1.png)
+        &-ground-2
+            &:before
+                background-image url(../images/section-icon-ground-2.png)
+
+    &__title
+        font-size: 36px
+        line-height: $base-lh
+        font-family: $magistral
+        text-align: center

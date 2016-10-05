@@ -1,0 +1,31 @@
+$color-flag = #f3b114
+.pic-present
+    position: relative
+
+    &__flag
+        width 30%
+        height 5%
+        position absolute
+        background-color $color-flag
+
+        &:before
+            content ''
+            width 30%
+            height 100%
+            position absolute
+            left -30%
+            background-color $color-flag
+            border-radius: 100% 0 0 0
+
+        &_top
+            right 5%
+            top -5%
+        &_bot
+            left 5%
+            bottom -5%
+            transform rotateZ(180deg)
+
+    &__img
+        width 100%
+        border-radius: 20% 0 20% 0
+        display: block
