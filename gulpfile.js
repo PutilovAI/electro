@@ -35,7 +35,9 @@ gulp.task('style', function() {
 
 gulp.task('js', function() {
 	return gulp.src([
-			'./src/assets/libs/jquery/dist/jquery.min.js',
+			'./node_modules/jquery/dist/jquery.min.js',
+			'./src/assets/libs/jquery.scrollbar/jquery.scrollbar.min.js',
+			'./src/assets/libs/owl.carousel/dist/owl.carousel.min.js',
 			'./src/blocks/**/*.js',
 			'./src/assets/js/*.js'
 		])
@@ -71,7 +73,7 @@ gulp.task('reload', function(){
 	return browserSync.reload
 })
 gulp.task('watch', function() {
-	gulp.watch(['./src/assets/style/*.*', './src/blocks/**/*.styl'], ['style']);
+	gulp.watch(['./src/assets/style/**/*.*', './src/blocks/**/*.styl'], ['style']);
 	gulp.watch(['./src/blocks/**/*.pug','./src/templates/**/*.pug'],  ['html'] );
 	gulp.watch(['./src/blocks/**/*.js',	'./src/assets/js/*.js'], ['js']);
 
