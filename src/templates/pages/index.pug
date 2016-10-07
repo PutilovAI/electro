@@ -60,4 +60,21 @@ block content
 			.container
 				include ../partials/form-order
 				h4.h-align_center Только при заказе с сайта: демонтаж старого щита в подарок!
+
+		section.section.section_icon-title.section_icon-title-ground-2
+			.container.h-pl_0
+				h2.section__title Изготовим любые щиты
+				p.section__title-desc.h-mb_60 Типовые и на заказ
+
+				.tabs
+					ul.tabs__control
+						each val,i in ['ВРУ', 'АВР', 'ШР','ЯУО','ШУ','ШК']
+							li.tabs__control-item(class=(i==0 ? "active":""), data-tab=i)
+								span.tabs__control-item-text=val
+
+					.tabs__content
+						each val,i in ['Вводно-распределительное устройство', 'АВР', 'ШР','ЯУО','ШУ','ШК']
+							.tabs__content-item(class=(i==0 ? "active":""),data-tab=i)
+								img.tabs__content-img(src='assets/images/img-vru.png')
+								h3.tabs__content-title=val
 block popup
