@@ -1,8 +1,8 @@
 .carousel.carousel_work
-    .carousel__owl.js-carousel-work.owl-carousel.js-carousel
-        each n in [1,2,3,4,2,3,1,4]
+    .carousel__owl.js-carousel-work.owl-carousel.js-carousel.js-popup-gallery
+        each n,i in [1,2,3,4,2,3,1,4]
             .carousel__item
-                .zoom
+                a.zoom.js-zoom(href='./assets/images/slider-works-'+n+'.png', title='Объект №'+i)
                     img.zoom__img(src='./assets/images/slider-works-'+n+'.png')
 
     .carousel__control.carousel__control_prev.js-carousel__control-prev

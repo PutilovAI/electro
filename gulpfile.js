@@ -39,6 +39,7 @@ gulp.task('js', function() {
 			'./src/assets/libs/jquery.scrollbar/jquery.scrollbar.min.js',
 			'./src/assets/libs/owl.carousel/dist/owl.carousel.min.js',
 			'./src/assets/libs/mask/jquery.mask.js',
+			'./src/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 			'./src/blocks/**/*.js',
 			'./src/assets/js/*.js'
 		])

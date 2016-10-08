@@ -10,6 +10,17 @@
         background-image url(../images/banner-main.png)
         min-height 700px
 
+    &_intro-inner
+        background-image url(../images/banner-inner.png)
+        min-height 300px
+        padding 150px 0 40px
+    &_intro-error
+        background-image url(../images/banner-404.png)
+        height auto
+        min-height: 100%
+        padding 100px 0 100px
+        flex-center()
+
     &_bg-order
         background-image url(../images/banner-order.png)
     &_bg-call
@@ -53,6 +64,7 @@
         text-align: center
         font-size: $fsH4
         color $color-main
+
     &__scroll-bot
         position: absolute
         pos-center-w()
@@ -62,8 +74,22 @@
         height 80px
         border-radius 50%
         background-color: #fff
+        cursor: pointer
+        & .icon
+            opacity: 0.7
+            transition: all 0.3s
+        &:hover
+            & .icon
+                opacity: 1
+        &_below
+            top -20px
 
     &__form-wrapper
         display flex
         align-items: flex-start
         justify-content: center
+
+    &__main-title
+        color #fff
+        font-size: $fsH1
+        font-family: $magistralbold

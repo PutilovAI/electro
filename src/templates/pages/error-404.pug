@@ -1,0 +1,12 @@
+extend ../layouts/error
+
+block content
+
+	section.section.section_intro-error
+		include ../partials/header-error
+
+		.intro.intro_error
+			h2.intro_title-top Страница не найдена
+			h1.intro__title Ошибка 404
+			p.intro__text.h-mb_60 К сожалению, такой страницы не существует на нашем сайте.
+			a(href="/").button.button_long Перейти на главную

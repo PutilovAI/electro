@@ -134,7 +134,10 @@
         var $item = $input.closest(__item),
             $error = $item.find(__error);
 
-        $item.data('isvalid', true);
+        $item
+            .data('isvalid', true)
+            .removeClass('error')
+            .addClass('succes');
         $input.data('isvalid', true);
         $error.fadeOut();
     }
@@ -142,7 +145,10 @@
         var $item = $input.closest(__item),
             $error = $item.find(__error);
 
-        $item.data('isvalid', false);
+        $item
+            .data('isvalid', false)
+            .addClass('error')
+            .removeClass('succes');
         $input.data('isvalid', false);
         $error.fadeIn();
     }

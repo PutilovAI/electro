@@ -15,11 +15,10 @@
         &:hover
             border-color rgba($input-border, 0.8)
 
-
         &:focus
             outline none
             border-color rgba($input-border, 1)
-            background-color rgba($input-bg, 1)
+            background-color rgba($input-bg, 0.8)
 
         &_norm
             max-width: 240px
@@ -44,3 +43,26 @@
         position: absolute
         bottom -30px
         color: $input-error
+        &_rel
+            bottom 0
+            position: relative
+            margin-top 10px
+        &_reverse
+            color #ff8b8f
+
+    //Status input wrapper
+    &.succes
+        & ^[0]__text
+            border-color rgba($input-border, 1)
+            &:hover
+                border-color rgba($input-border, 1)
+
+    &.error
+        & ^[0]__text
+            border-color rgba($input-border-error, 0.8)
+            &:hover
+                border-color  rgba($input-border-error, 0.9)
+
+            &:focus
+                border-color rgba($input-border-error, 1)
+                background-color rgba($input-bg, 0.8)

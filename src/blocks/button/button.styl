@@ -1,5 +1,3 @@
-$bg-action = #f3b114
-
 .button
 	border-radius 0.3em
 	padding 1em 1.3em 1.1em
@@ -11,20 +9,22 @@ $bg-action = #f3b114
 	color #fff
 	text-align center
 	transition all 0.2s linear
+	outline none
+	user-select none
 
 	&:hover
 		color #fff
 		background-color lighten($color-main, 5%)
 
 	&_action
-		background-color $bg-action
+		background-color $color-second
 		font-size 12px
 		text-transform uppercase
 		padding 1.1em 3em 1.15em
 
 		&:hover
 			color $base-fc
-			background-color #f3cc14
+			background-color $color-second-hover
 
 	&_long
 		padding-left: 5em
@@ -33,11 +33,11 @@ $bg-action = #f3b114
 	&_link
 		padding 1.1em 3em 1.15em
 		background-color transparent
-		border 2px solid $bg-action
+		border 2px solid $color-second
 		color $base-fc
 		text-transform: uppercase
 		font-size 12px
 		&:hover
 			color $base-fc
-			background-color #f3cc14
-			border-color #f3cc14
+			background-color $color-second-hover
+			border-color $color-second-hover
