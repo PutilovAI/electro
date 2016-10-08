@@ -12,6 +12,8 @@
 
     &_bg-order
         background-image url(../images/banner-order.png)
+    &_bg-call
+        background-image url(../images/banner-call.png)
     &_bg-off
         background-image url(../images/banner-off.png)
         background-position: top
@@ -37,8 +39,15 @@
             &:before
                 background-image url(../images/section-icon-ground-2.png)
 
-    &__title
+    &__title-wrap
         text-align: center
+        margin-bottom: 60px
+        &_min
+            margin-bottom 30px
+
+    &__title
+        font-size: $fsH2
+        font-family: $magistral
 
     &__title-desc
         text-align: center
@@ -53,3 +62,8 @@
         height 80px
         border-radius 50%
         background-color: #fff
+
+    &__form-wrapper
+        display flex
+        align-items: flex-start
+        justify-content: center

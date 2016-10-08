@@ -3,31 +3,44 @@
     &__text
         font-size: 16px
         padding 0.6em 1em
-        background-color $input-bg
-        border 2px solid $input-border
+        background-color rgba($input-bg, 0.6)
+        border 2px solid rgba($input-border, 0.6)
         outline none
         border-radius 3px
         color $input-color
-        opacity: 0.6
         transition all 0.2s linear
         width: 100%
         min-width: 240px
 
         &:hover
-            opacity: 0.8
+            border-color rgba($input-border, 0.8)
+
 
         &:focus
             outline none
-            opacity: 1
+            border-color rgba($input-border, 1)
+            background-color rgba($input-bg, 1)
 
+        &_norm
+            max-width: 240px
         &_full
             max-width: 100%
 
     &__label
         font-size: 16px
         margin-bottom 8px
+        &_required
+            &:after
+                content '*'
+                display inline-block
+                color $color-red
+                position: relative
+                margin-left 3px
+                top -2px
+
 
     &__error
+        display: none
         position: absolute
         bottom -30px
         color: $input-error

@@ -7,11 +7,13 @@ $(document).ready(function(){
 
     $owlWork.owlCarousel({
         items: 4,
+        margin: 20,
         loop: true
     });
 
     $owlFirms.owlCarousel({
         items:6,
+        margin: 20,
         loop: true
     });
 

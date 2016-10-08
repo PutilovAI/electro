@@ -41,9 +41,10 @@ block content
 
 		section.section.section_icon-title.section_icon-title-ground-1
 			.container
-				h2.section__title.h-mb_60
-					|Выбирая нас,&nbsp;
-					span.h-color_blue.h-text_bold-mag  вы получаете:
+				.section__title-wrap
+					h2.section__title
+						|Выбирая нас,&nbsp;
+						span.h-color_blue.h-text_bold-mag  вы получаете:
 
 				.row
 					.col_6
@@ -63,8 +64,9 @@ block content
 
 		section.section.section_icon-title.section_icon-title-ground-2
 			.container
-				h2.section__title Изготовим любые щиты
-				p.section__title-desc.h-mb_60 Типовые и на заказ
+				.section__title-wrap
+					h2.section__title Изготовим любые щиты
+					p.section__title-desc Типовые и на заказ
 			.container.h-pl_0
 				.tabs.js-tabs
 					ul.tabs__control
@@ -103,29 +105,29 @@ block content
 				.icon.icon_mouse
 
 			.container
-				h2.section__title Наши работы
+				.section__title-wrap
+					h2.section__title Наши работы
 
-				.carousel.carousel_work
-					.carousel__owl.js-carousel-work.owl-carousel.js-carousel
-						each n in [1,2,3,4,2,3,1,4]
-							.carousel__item
-								.zoom
-									img.zoom__img(src='./assets/images/slider-works-'+n+'.png')
+				include ../partials/carousels
 
-					.carousel__control.carousel__control_prev.js-carousel__control-prev
-					.carousel__control.carousel__control_next.js-carousel__control-next
+		section.section.section_bg-call.h-color_white
+			.container
+				.section__title-wrap
+					h2.section__title Есть вопросы? Звоните
 
-				h2.section__title Только лучшие поставщики
-				p.section__title-desc.h-mb_30 Мы работаем с поставщиками напрямую, что гарантирует низкие цены.
+				include ../partials/form-call
+		section.section
+			.container
+				.section__title-wrap.section__title-wrap_min
+					h2.section__title Текстовый заголовок для продвижения
+				.row
+					.col_10.shift_1
+						p.h-mb_40 ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.
 
-				.carousel.carousel_firms
-					.carousel__owl.js-carousel-firms.owl-carousel.js-carousel
-						each n in [1,2,3,4,5,6,2,4,1,3]
-							.carousel__item
-								img(src='./assets/images/slider-firms-'+n+'.png')
+						div.h-align_center
+							a.button.button_link(href="#") Подробнее
 
-					.carousel__control.carousel__control_prev.js-carousel__control-prev
-					.carousel__control.carousel__control_next.js-carousel__control-next
+		include ../partials/footer
 
 
 

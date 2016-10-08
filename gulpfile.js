@@ -38,6 +38,7 @@ gulp.task('js', function() {
 			'./node_modules/jquery/dist/jquery.min.js',
 			'./src/assets/libs/jquery.scrollbar/jquery.scrollbar.min.js',
 			'./src/assets/libs/owl.carousel/dist/owl.carousel.min.js',
+			'./src/assets/libs/mask/jquery.mask.js',
 			'./src/blocks/**/*.js',
 			'./src/assets/js/*.js'
 		])
