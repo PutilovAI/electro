@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="shortcut icon" href="'./assets/images/favicon.ico" type="image/x-icon">
+    <link href="./assets/css/main.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper__page">
+            <section class="section section_intro">
+                <header class="header">
+                    <div class="container">
+                        <div class="header__container">
+                            <div class="header__item">
+                                <a class="logo" href="/"></a>
+                            </div>
+                            <div class="header__item h-align_right"><a class="button js-popup-open" href="#popup-form-order-1">Получить консультацию</a>
+                                <div class="phone h-display_inline-block h-ml_30">
+                                    <div class="phone__icon"></div>
+                                    <div class="phone__number">
+                                        <div class="phone__number-prefix">+7 (343)</div>
+                                        <div class="phone__number-main">202-04-90</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="intro">
+                    <h1 class="intro__title">Электрощиты</h1>
+                    <div class="intro__line"></div>
+                    <div class="intro__desc">С гарантией&nbsp;<span class="h-color_yellow">5 лет</span>
+                    </div>
+                </div>
+                <div class="intro-tile">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col_4">
+                                <div class="intro-tile__item intro-tile__item_prod">
+                                    <div class="intro-tile__item-icon intro-tile__item-icon_prod"></div>
+                                    <div class="intro-tile__item-text">Для производственных помещений</div>
+                                </div>
+                            </div>
+                            <div class="col_4">
+                                <div class="intro-tile__item intro-tile__item_home">
+                                    <div class="intro-tile__item-icon intro-tile__item-icon_home"></div>
+                                    <div class="intro-tile__item-text">Для частного дома</div>
+                                </div>
+                            </div>
+                            <div class="col_4">
+                                <div class="intro-tile__item intro-tile__item_public">
+                                    <div class="intro-tile__item-icon intro-tile__item-icon_public"></div>
+                                    <div class="intro-tile__item-text">Для общественных помещений</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section_icon-title section_icon-title-ground-1">
+                <div class="container">
+                    <div class="section__title-wrap">
+                        <h2 class="section__title">Выбирая нас,&nbsp;<span class="h-color_blue h-text_bold-mag"> вы получаете:</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col_6">
+                            <div class="pic-present">
+                                <div class="pic-present__flag pic-present__flag_top"></div>
+                                <div class="pic-present__flag pic-present__flag_bot"></div>
+                                <img class="pic-present__img" src="./assets/images/pic-present-1.jpg">
+                            </div>
+                        </div>
+                        <div class="col_6">
+                            <ul class="list-icon h-mt_10">
+                                <li class="list-icon__item">
+                                    <div class="list-icon__item-text">Гарантию на оборудование</div>
+                                    <div class="list-icon__item-icon">
+                                        <div class="icon icon_sheld"></div>
+                                    </div>
+                                </li>
+                                <li class="list-icon__item">
+                                    <div class="list-icon__item-text">Доступные и честные цены</div>
+                                    <div class="list-icon__item-icon">
+                                        <div class="icon icon_price"></div>
+                                    </div>
+                                </li>
+                                <li class="list-icon__item">
+                                    <div class="list-icon__item-text">Только качественные комплектующие</div>
+                                    <div class="list-icon__item-icon">
+                                        <div class="icon icon_check"></div>
+                                    </div>
+                                </li>
+                                <li class="list-icon__item">
+                                    <div class="list-icon__item-text">Квалифицированный и опытный персонал</div>
+                                    <div class="list-icon__item-icon">
+                                        <div class="icon icon_user"></div>
+                                    </div>
+                                </li>
+                                <li class="list-icon__item">
+                                    <div class="list-icon__item-text">Защиту оборудования от пыли и влаги</div>
+                                    <div class="list-icon__item-icon">
+                                        <div class="icon icon_wet"></div>
+                                    </div>
+                                </li>
+                                <li class="list-icon__item">
+                                    <div class="list-icon__item-text">Безопасность обслуживания</div>
+                                    <div class="list-icon__item-icon">
+                                        <div class="icon icon_lock"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section_bg-order h-color_white">
+                <div class="section__scroll-bot js-section-scroll">
+                    <div class="icon icon_mouse"></div>
+                </div>
+                <div class="container">
+                    <h2 class="section__title h-display_inline-block h-ml_30 h-mr_50 h-align_left h-lh_1">Заказать<br>щит:</h2>
+                    <form class="form form_gorizontal h-display_inline-block h-valign_top h-mb_60 js-valid-form" action="#">
+                        <div class="form__row">
+                            <div class="input js-valid-form__item">
+                                <div class="input__label input__label_required" for="id-input-order-name">Ваше имя</div>
+                                <input class="input__text" type="text" placeholder="Введите имя" id="id-input-order-name">
+                                <div class="input__error js-valid-form__error">Не введено имя</div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="input js-valid-form__item">
+                                <div class="input__label input__label_required" for="id-input-order-phone">Ваш телефон</div>
+                                <input class="input__text js-mask-phone" type="text" placeholder="+7 (___) ___-__-__" id="id-input-order-phone">
+                                <div class="input__error js-valid-form__error">Не введен номер телефона</div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <button class="button button_action js-valid-form__button" type="submit">Заказать</button>
+                        </div>
+                    </form>
+                    <h4 class="h-align_center">Только при заказе с сайта: демонтаж старого щита в подарок!</h4>
+                </div>
+            </section>
+            <section class="section section_icon-title section_icon-title-ground-2">
+                <div class="container">
+                    <div class="section__title-wrap">
+                        <h2 class="section__title">Изготовим любые щиты</h2>
+                        <p class="section__title-desc">Типовые и на заказ</p>
+                    </div>
+                </div>
+                <div class="container h-pl_0">
+                    <div class="tabs js-tabs">
+                        <ul class="tabs__control">
+                            <li class="tabs__control-item js-tabs__control active" data-tab="0"><span class="tabs__control-item-text">ВРУ</span>
+                            </li>
+                            <li class="tabs__control-item js-tabs__control" data-tab="1"><span class="tabs__control-item-text">АВР</span>
+                            </li>
+                            <li class="tabs__control-item js-tabs__control" data-tab="2"><span class="tabs__control-item-text">ШР</span>
+                            </li>
+                            <li class="tabs__control-item js-tabs__control" data-tab="3"><span class="tabs__control-item-text">ЯУО</span>
+                            </li>
+                            <li class="tabs__control-item js-tabs__control" data-tab="4"><span class="tabs__control-item-text">ШУ</span>
+                            </li>
+                            <li class="tabs__control-item js-tabs__control" data-tab="5"><span class="tabs__control-item-text">ШК</span>
+                            </li>
+                        </ul>
+                        <div class="tabs__content">
+                            <div class="tabs__content-item js-tabs__content active" data-tab="0">
+                                <img class="tabs__content-img" src="assets/images/img-vru.png">
+                                <h3 class="tabs__content-title">Вводно-распределительное устройство</h3>
+                                <div class="tabs__content-scroll-block-wrapper js-custom-scroll scrollbar-outer">
+                                    <div class="tabs__content-scroll-block-desc">
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                    </div>
+                                </div>
+                                <div class="tabs__content-call">
+                                    <div class="tabs__content-call-icon">
+                                        <div class="icon icon_wire"></div>
+                                    </div>
+                                    <div class="tabs__content-call-text">Закажите ВРУ сейчас и получите демонтаж старого оборудования и установку нового в подарок!</div>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item js-tabs__content" data-tab="1">
+                                <img class="tabs__content-img" src="assets/images/pic-present-1.jpg">
+                                <h3 class="tabs__content-title">АВР</h3>
+                                <div class="tabs__content-scroll-block-wrapper js-custom-scroll scrollbar-outer">
+                                    <div class="tabs__content-scroll-block-desc">
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                    </div>
+                                </div>
+                                <div class="tabs__content-call">
+                                    <div class="tabs__content-call-icon">
+                                        <div class="icon icon_wire"></div>
+                                    </div>
+                                    <div class="tabs__content-call-text">Закажите ВРУ сейчас и получите демонтаж старого оборудования и установку нового в подарок!</div>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item js-tabs__content" data-tab="2">
+                                <img class="tabs__content-img" src="assets/images/img-vru.png">
+                                <h3 class="tabs__content-title">ШР</h3>
+                                <div class="tabs__content-scroll-block-wrapper js-custom-scroll scrollbar-outer">
+                                    <div class="tabs__content-scroll-block-desc">
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                    </div>
+                                </div>
+                                <div class="tabs__content-call">
+                                    <div class="tabs__content-call-icon">
+                                        <div class="icon icon_wire"></div>
+                                    </div>
+                                    <div class="tabs__content-call-text">Закажите ВРУ сейчас и получите демонтаж старого оборудования и установку нового в подарок!</div>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item js-tabs__content" data-tab="3">
+                                <img class="tabs__content-img" src="assets/images/img-vru.png">
+                                <h3 class="tabs__content-title">ЯУО</h3>
+                                <div class="tabs__content-scroll-block-wrapper js-custom-scroll scrollbar-outer">
+                                    <div class="tabs__content-scroll-block-desc">
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                    </div>
+                                </div>
+                                <div class="tabs__content-call">
+                                    <div class="tabs__content-call-icon">
+                                        <div class="icon icon_wire"></div>
+                                    </div>
+                                    <div class="tabs__content-call-text">Закажите ВРУ сейчас и получите демонтаж старого оборудования и установку нового в подарок!</div>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item js-tabs__content" data-tab="4">
+                                <img class="tabs__content-img" src="assets/images/img-vru.png">
+                                <h3 class="tabs__content-title">ШУ</h3>
+                                <div class="tabs__content-scroll-block-wrapper js-custom-scroll scrollbar-outer">
+                                    <div class="tabs__content-scroll-block-desc">
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                    </div>
+                                </div>
+                                <div class="tabs__content-call">
+                                    <div class="tabs__content-call-icon">
+                                        <div class="icon icon_wire"></div>
+                                    </div>
+                                    <div class="tabs__content-call-text">Закажите ВРУ сейчас и получите демонтаж старого оборудования и установку нового в подарок!</div>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item js-tabs__content" data-tab="5">
+                                <img class="tabs__content-img" src="assets/images/img-vru.png">
+                                <h3 class="tabs__content-title">ШК</h3>
+                                <div class="tabs__content-scroll-block-wrapper js-custom-scroll scrollbar-outer">
+                                    <div class="tabs__content-scroll-block-desc">
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                        <p>ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                                    </div>
+                                </div>
+                                <div class="tabs__content-call">
+                                    <div class="tabs__content-call-icon">
+                                        <div class="icon icon_wire"></div>
+                                    </div>
+                                    <div class="tabs__content-call-text">Закажите ВРУ сейчас и получите демонтаж старого оборудования и установку нового в подарок!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container h-align_center h-mt_30"><a class="button button_action button_long js-popup-open" href="#popup-message-succes">Заказать щит</a>
+                </div>
+            </section>
+            <section class="section section_bg-off">
+                <div class="section__scroll-bot js-section-scroll">
+                    <div class="icon icon_mouse"></div>
+                </div>
+                <div class="container">
+                    <div class="section__title-wrap">
+                        <h2 class="section__title">Наши работы</h2>
+                    </div>
+                    <div class="carousel carousel_work">
+                        <div class="carousel__owl js-carousel-work owl-carousel js-carousel js-popup-gallery">
+                            <div class="carousel__item">
+                                <a class="zoom js-zoom" href="./assets/images/slider-works-1.png" title="Объект №0">
+                                    <img class="zoom__img" src="./assets/images/slider-works-1.png">
+                                </a>
+                            </div>
+                            <div class="carousel__item">
+                                <a class="zoom js-zoom" href="./assets/images/slider-works-2.png" title="Объект №1">
+                                    <img class="zoom__img" src="./assets/images/slider-works-2.png">
+                                </a>
+                            </div>
+                            <div class="carousel__item">
+                                <a class="zoom js-zoom" href="./assets/images/slider-works-3.png" title="Объект №2">
+                                    <img class="zoom__img" src="./assets/images/slider-works-3.png">
+                                </a>
+                            </div>
+                            <div class="carousel__item">
+                                <a class="zoom js-zoom" href="./assets/images/slider-works-4.png" title="Объект №3">
+                                    <img class="zoom__img" src="./assets/images/slider-works-4.png">
+                                </a>
+                            </div>
+                            <div class="carousel__item">
+                                <a class="zoom js-zoom" href="./assets/images/slider-works-2.png" title="Объект №4">
+                                    <img class="zoom__img" src="./assets/images/slider-works-2.png">
+                                </a>
+                            </div>
+                            <div class="carousel__item">
+                                <a class="zoom js-zoom" href="./assets/images/slider-works-3.png" title="Объект №5">
+                                    <img class="zoom__img" src="./assets/images/slider-works-3.png">
+                                </a>
+                            </div>
+                            <div class="carousel__item">
+                                <a class="zoom js-zoom" href="./assets/images/slider-works-1.png" title="Объект №6">
+                                    <img class="zoom__img" src="./assets/images/slider-works-1.png">
+                                </a>
+                            </div>
+                            <div class="carousel__item">
+                                <a class="zoom js-zoom" href="./assets/images/slider-works-4.png" title="Объект №7">
+                                    <img class="zoom__img" src="./assets/images/slider-works-4.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel__control carousel__control_prev js-carousel__control-prev"></div>
+                        <div class="carousel__control carousel__control_next js-carousel__control-next"></div>
+                    </div>
+                    <div class="section__title-wrap section__title-wrap_min">
+                        <h2 class="section__title">Только лучшие поставщики</h2>
+                        <p class="section__title-desc">Мы работаем с поставщиками напрямую, что гарантирует низкие цены.</p>
+                    </div>
+                    <div class="carousel carousel_firms">
+                        <div class="carousel__owl js-carousel-firms owl-carousel js-carousel">
+                            <div class="carousel__item">
+                                <img src="./assets/images/slider-firms-1.png">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="./assets/images/slider-firms-2.png">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="./assets/images/slider-firms-3.png">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="./assets/images/slider-firms-4.png">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="./assets/images/slider-firms-5.png">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="./assets/images/slider-firms-6.png">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="./assets/images/slider-firms-2.png">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="./assets/images/slider-firms-4.png">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="./assets/images/slider-firms-1.png">
+                            </div>
+                            <div class="carousel__item">
+                                <img src="./assets/images/slider-firms-3.png">
+                            </div>
+                        </div>
+                        <div class="carousel__control carousel__control_prev js-carousel__control-prev"></div>
+                        <div class="carousel__control carousel__control_next js-carousel__control-next"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section_bg-call h-color_white">
+                <div class="container">
+                    <div class="section__title-wrap">
+                        <h2 class="section__title">Есть вопросы? Звоните</h2>
+                    </div>
+                    <div class="section__form-wrapper h-mt_40">
+                        <div class="phone phone_big h-mr_40">
+                            <div class="phone__icon"></div>
+                            <div class="phone__number">
+                                <div class="phone__number-prefix">+7 (343)</div>
+                                <div class="phone__number-main">202-04-90</div>
+                            </div>
+                        </div>
+                        <div class="h-mr_40 h-mt_30 h-color_second">Или</div>
+                        <form class="form form_gorizontal js-valid-form" action="#">
+                            <div class="form__row">
+                                <div class="input js-valid-form__item">
+                                    <div class="input__label input__label_required h-mb_20" for="id-input-call-phone-1">Оставьте свой номер и мы вам перезвоним</div>
+                                    <input class="input__text input__text_norm js-mask-phone" type="text" placeholder="+7 (___) ___-__-__" id="id-input-call-phone-1">
+                                    <div class="input__error js-valid-form__error">Не введен номер телефона</div>
+                                    <button class="button button_action js-valid-form__button h-ml_20" type="submit">Заказать</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="section__title-wrap section__title-wrap_min">
+                        <h2 class="section__title">Текстовый заголовок для продвижения</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col_10 shift_1">
+                            <p class="h-mb_40">ВРУ — устройство (электрощит), предназначенное для приёма, распределения, резервирования и учёта электрической энергии, устанавливаемое в жилых и общественных зданиях, а также промышленных производственных помещениях.</p>
+                            <div
+                            class="h-align_center"><a class="button button_link" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__container">
+                    <div class="footer__col"><span class="h-color_second">©</span>&nbsp;De-box — монтаж электрощитов, 2008-2016</div>
+                    <div class="footer__col"><a href="#">Создание</a>&nbsp; и &nbsp;<a href="#">продвижение</a>&nbsp; &mdash; The jazz</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="wrapper__popups">
+        <div class="popup popup_form" id="popup-form-order-1">
+            <div class="popup__close js-popup__close"></div>
+            <div class="popup__title-block">
+                <div class="popup__content">
+                    <div class="popup__title-text">Получить консультацию</div>
+                </div>
+            </div>
+            <div class="popup__content-bottom">
+                <form class="form js-valid-form" action="#">
+                    <div class="form__row">
+                        <div class="input js-valid-form__item">
+                            <div class="input__label input__label_required" for="id-input-order-name">Ваше имя</div>
+                            <input class="input__text input__text_full" type="text" placeholder="Введите имя" id="id-input-order-name">
+                            <div class="input__error input__error_rel input__error_reverse js-valid-form__error">Не введено имя</div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="input js-valid-form__item">
+                            <div class="input__label input__label_required" for="id-input-order-phone">Ваш телефон</div>
+                            <input class="input__text input__text_full js-mask-phone" type="text" placeholder="+7 (___) ___-__-__" id="id-input-order-phone">
+                            <div class="input__error input__error_rel input__error_reverse js-valid-form__error">Не введен номер телефона</div>
+                        </div>
+                    </div>
+                    <div class="form__row h-align_center h-mt_25">
+                        <button class="button button_action js-valid-form__button" type="submit">Заказать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup popup_form" id="popup-message-succes">
+            <div class="popup__close js-popup__close"></div>
+            <div class="popup__title-block">
+                <div class="popup__content">
+                    <div class="popup__title-text">Сообщение успешно отправлено</div>
+                </div>
+            </div>
+            <div class="popup__content-bottom"></div>
+        </div>
+        <div class="popup popup_form" id="popup-form-order-1">
+            <div class="popup__close js-popup__close"></div>
+            <div class="popup__title-block">
+                <div class="popup__content">
+                    <div class="popup__title-text">Получить консультацию</div>
+                </div>
+            </div>
+            <div class="popup__content-bottom">
+                <form class="form js-valid-form" action="#">
+                    <div class="form__row">
+                        <div class="input js-valid-form__item">
+                            <div class="input__label input__label_required" for="id-input-order-name">Ваше имя</div>
+                            <input class="input__text input__text_full" type="text" placeholder="Введите имя" id="id-input-order-name">
+                            <div class="input__error input__error_rel input__error_reverse js-valid-form__error">Не введено имя</div>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="input js-valid-form__item">
+                            <div class="input__label input__label_required" for="id-input-order-phone">Ваш телефон</div>
+                            <input class="input__text input__text_full js-mask-phone" type="text" placeholder="+7 (___) ___-__-__" id="id-input-order-phone">
+                            <div class="input__error input__error_rel input__error_reverse js-valid-form__error">Не введен номер телефона</div>
+                        </div>
+                    </div>
+                    <div class="form__row h-align_center h-mt_25">
+                        <button class="button button_action js-valid-form__button" type="submit">Заказать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup popup_form" id="popup-message-succes">
+            <div class="popup__close js-popup__close"></div>
+            <div class="popup__title-block">
+                <div class="popup__content">
+                    <div class="popup__title-text">Сообщение успешно отправлено</div>
+                </div>
+            </div>
+            <div class="popup__content-bottom"></div>
+        </div>
+    </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

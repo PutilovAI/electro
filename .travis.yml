@@ -1,8 +1,0 @@
-language: node_js
-node_js:
-  - "6"
-  - "0.6"
-  - "iojs"
-before_script:
-  - npm install -g grunt-cli
-script: gulp prod
