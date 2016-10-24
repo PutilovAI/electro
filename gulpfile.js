@@ -15,7 +15,7 @@ const del = require('del');
 const prettify = require('gulp-html-prettify');
 const browserSync  = require('browser-sync');
 const flatten  = require('gulp-flatten');
-const deploy  =require('gulp-gh-pages');
+const deploy  = require('gulp-gh-pages');
 
 gulp.task('deploy', function () {
   return gulp.src("./dist/**/*")
