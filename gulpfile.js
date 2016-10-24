@@ -7,6 +7,8 @@ const rename = require('gulp-rename');
 const concat = require('gulp-concat');
 const uglifyjs = require('gulp-uglifyjs');
 const imagemin = require('gulp-imagemin');
+const cache    = require('gulp-cache');
+const pngquant = require('imagemin-pngquant'); //библиотека для работы с png
 const cssnano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
 const del = require('del');
@@ -44,7 +46,7 @@ gulp.task('js', function() {
 			'./src/assets/js/*.js'
 		])
 		.pipe( concat('main.js') )
-		//.pipe( uglifyjs() )
+		.pipe( uglifyjs() )
 		.pipe( gulp.dest('./dist/assets/js') )
 })
 
@@ -62,14 +64,40 @@ gulp.task('fonts', function() {
 		.pipe(gulp.dest('./dist/assets/fonts'))
 });
 
-gulp.task('connect', function() { // Создаем таск browser-sync
-	browserSync({ // Выполняем browserSync
-		server: { // Определяем параметры сервера
-			baseDir: './dist' // Директория для сервера - app
+gulp.task('connect', function() {
+	browserSync({
+		server: {
+			baseDir: './dist' // Директория для сервера
 		},
 		notify: false // Отключаем уведомления
 	});
 });
+
+gulp.task('style:min', function(){
+	return gulp.src('./dist/assets/css/main.css')
+		.pipe(cssnano())
+		.pipe(gulp.dest('./dist/assets/css'))
+})
+gulp.task('js:min', function(){
+	return gulp.src('./dist/assets/js/main.js')
+		.pipe(uglifyjs())
+		.pipe(gulp.dest('./dist/assets/js'))
+})
+
+gulp.task('img:min', function() {
+	return gulp.src('./dist/assets/images/**/*')
+		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
+			interlaced: true,
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}],
+			use: [pngquant()]
+		})))
+		.pipe(gulp.dest('./dist/assets/images'));
+});
+
+gulp.task('clear', function() {
+	return del.sync('./dist'); // Удаляем папку dist перед сборкой
+})
 
 gulp.task('reload', function(){
 	return browserSync.reload
@@ -78,10 +106,12 @@ gulp.task('watch', function() {
 	gulp.watch(['./src/assets/style/**/*.*', './src/blocks/**/*.styl'], ['style']);
 	gulp.watch(['./src/blocks/**/*.pug','./src/templates/**/*.pug'],  ['html'] );
 	gulp.watch(['./src/blocks/**/*.js',	'./src/assets/js/*.js'], ['js']);
-
-
 });
+gulp.task('min', ['style:min', 'js:min', 'img:min']);
 
 gulp.task('default', ['style', 'js', 'html', 'fonts', 'img']);
-
 gulp.task('dev', ['default', 'connect', 'watch']);
+
+gulp.task('prod', ['default'], function(){
+	gulp.start('min')
+});
