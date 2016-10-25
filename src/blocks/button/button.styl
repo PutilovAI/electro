@@ -1,10 +1,13 @@
+$button-br = 0.3em
+
 .button
-	border-radius 0.3em
+	border-radius $button-br
 	padding 1em 1.3em 1.1em
 	background-color $color-main
 	cursor pointer
 	border none
 	display inline-block
+	vertical-align: middle
 	text-decoration none
 	color #fff
 	text-align center
@@ -41,3 +44,12 @@
 			color $base-fc
 			background-color $color-second-hover
 			border-color $color-second-hover
+
+.button-group
+	& .button
+		border-radius: 0 $button-br $button-br 0
+		&_link
+			padding 0.9em 3em 1em
+
+		&:first-child
+			border-radius: $button-br 0 0 $button-br
