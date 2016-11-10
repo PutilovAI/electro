@@ -18,7 +18,7 @@ const conf = {
     src: src
   },
   name: {
-    zip: 'uraltabak.zip'
+    zip: 'debox.zip'
   }
 }
 
