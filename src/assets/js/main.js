@@ -17,6 +17,7 @@ $(document).ready(function(){
        tLoading: 'Loading image #%curr%...',
        mainClass: 'mfp-img-mobile',
        closeBtnInside: false,
+       fixedContentPos: true,
        gallery: {
          enabled: true,
          navigateByImgClick: true,
@@ -37,6 +38,7 @@ $(document).ready(function(){
       preloader: false,
       focus: '#name',
       showCloseBtn : false,
+      fixedContentPos: true,
 
       // When elemened is focused, some mobile browsers in some cases zoom in
       // It looks not nice, so we disable it:
